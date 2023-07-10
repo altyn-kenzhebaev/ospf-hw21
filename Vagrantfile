@@ -96,7 +96,6 @@ Vagrant.configure("2") do |config|
           box.vm.provision "ansible" do |ansible|
             ansible.playbook = 'ansible/ospf.yml'
             ansible.inventory_path = "ansible/hosts"
-            ansible.limit = "all"
             ansible.compatibility_mode = "2.0"
           end
         end
