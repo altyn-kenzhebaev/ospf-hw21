@@ -1,0 +1,50 @@
+routers:
+  hosts:
+    router1: 
+      ansible_host: 127.0.0.1
+      ansible_port: 2222
+      ansible_private_key_file: /home/altynbek/Otus-homeworks/ospf-hw21/.vagrant/machines/router1/virtualbox/private_key
+      router_id: "1.1.1.1"
+      net1_desc: "r1-r2"
+      net1_ip: "10.0.10.1/30"
+      net1_net: "10.0.10.0/30"
+      net1_neighbor: "10.0.10.2"
+      net2_desc: "r1-r3"
+      net2_ip: "10.0.12.1/30"
+      net2_net: "10.0.12.0/30"
+      net2_neighbor: "10.0.12.2"
+      net3_desc: "net_router1"
+      net3_ip: "192.168.10.1/24"
+      net3_net: "192.168.10.0/24"
+    router2:
+      ansible_host: 127.0.0.1
+      ansible_port: 2200
+      ansible_private_key_file: /home/altynbek/Otus-homeworks/ospf-hw21/.vagrant/machines/router2/virtualbox/private_key
+      router_id: "2.2.2.2"
+      net1_desc: "r1-r2"
+      net1_ip: "10.0.10.2/30"
+      net1_net: "10.0.10.0/30"
+      net1_neighbor: "10.0.10.1"
+      net2_desc: "r2-r3"
+      net2_ip: "10.0.11.2/30"
+      net2_net: "10.0.11.0/30"
+      net2_neighbor: "10.0.11.1"
+      net3_desc: "net_router2"
+      net3_ip: "192.168.20.1/24"
+      net3_net: "192.168.20.0/24"
+    router3:
+      ansible_host: 127.0.0.1
+      ansible_port: 2201
+      ansible_private_key_file: /home/altynbek/Otus-homeworks/ospf-hw21/.vagrant/machines/router3/virtualbox/private_key
+      router_id: "3.3.3.3"
+      net1_desc: "r2-r3"
+      net1_ip: "10.0.11.1/30"
+      net1_net: "10.0.11.0/30"
+      net1_neighbor: "10.0.10.2"
+      net2_desc: "r1-r3"
+      net2_ip: "10.0.12.2/30"
+      net2_net: "10.0.12.0/30"
+      net2_neighbor: "10.0.12.1"
+      net3_desc: "net_router3"
+      net3_ip: "192.168.30.1/24"
+      net3_net: "192.168.30.0/24"
